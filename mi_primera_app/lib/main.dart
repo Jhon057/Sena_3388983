@@ -1,0 +1,24 @@
+import 'package:material_ui/material_ui.dart';
+import 'views/login_view.dart';
+
+
+void main() {
+  runApp(const MiApp());
+}
+
+class MiApp extends StatelessWidget {
+  const MiApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Cursos ADSO',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+        useMaterial3: true,
+      ),
+      home: const LoginView(),
+    );
+  }
+}
