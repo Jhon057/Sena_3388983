@@ -1,12 +1,12 @@
 import 'package:material_ui/material_ui.dart';
+
 import 'home_view.dart';
 
 class LoginView extends StatefulWidget {
-const LoginView({super.key});
+  const LoginView({super.key});
 
-
-@override
-State<LoginView> createState() => _LoginViewState();
+  @override
+  State<LoginView> createState() => _LoginViewState();
 }
 
 class _LoginViewState extends State<LoginView> {
