@@ -64,6 +64,13 @@ class _DetailViewState extends State<DetailView> {
               Text('${curso.horas} horas'),
             ],
           ),
+          Row(
+            children: [
+              const Icon(Icons.schedule),
+              const SizedBox(width: 8),
+              Text(curso.modalidad),
+            ],
+          ),
           const Divider(height: 32),
           Text(curso.descripcion, style: Theme.of(context).textTheme.bodyLarge),
           const SizedBox(height: 32),
